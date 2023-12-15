@@ -23,11 +23,11 @@ jobs:
         uses: montudor/action-zip@v1
 
       - name: Zip output
-        run: zip -qq -j -r build.zip public
-        working-directory: '.output'
+        run: zip -qq -r build-public.zip .
+        working-directory: '.output/public'
 
       - name: Upload build
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: '.output/build.zip'
+          files: '.output/public/build-public.zip'
