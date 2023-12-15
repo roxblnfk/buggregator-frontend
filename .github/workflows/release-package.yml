@@ -20,9 +20,9 @@ jobs:
       - run: yarn build
       - uses: montudor/action-zip@v1
         with:
-          args: zip -qq -r public.zip .output/public
+          args: zip -qq -r build.zip .output/public
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: .output/public.zip
+          files: build.zip
