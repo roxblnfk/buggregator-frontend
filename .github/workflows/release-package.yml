@@ -23,7 +23,7 @@ jobs:
         uses: montudor/action-zip@v1
 
       - name: Zip output
-        run: zip -qq -r build.zip public
+        run: zip -qq -j -r build.zip public
         working-directory: '.output'
 
       - name: Upload build
