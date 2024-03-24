@@ -96,14 +96,12 @@ const connectionText = computed(
 <style lang="scss" scoped>
 .layout-sidebar {
   @apply bg-gray-200 dark:bg-gray-800;
-  @apply w-9 sm:w-10 md:w-14;
+  @apply w-9 sm:w-10 md:w-12;
   @apply flex flex-col justify-between;
 }
 
 .layout-sidebar__nav {
   @apply flex-col flex overflow-auto;
-  @apply divide-y divide-gray-300 dark:divide-gray-600;
-  @apply border-b border-gray-300 dark:border-gray-600;
 }
 
 .layout-sidebar__link {
@@ -119,12 +117,11 @@ const connectionText = computed(
 .layout-sidebar__link-icon {
   @apply fill-current;
   @apply mx-auto;
-  @apply w-3 h-3 md:w-5 md:h-5 lg:w-6 lg:h-6;
+  @apply w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6;
 }
 
 .layout-sidebar__connection {
   @apply h-9 sm:h-10 md:h-14;
-  @apply border-t border-gray-300 dark:border-gray-700;
   @apply flex items-center justify-center;
 }
 
@@ -138,7 +135,6 @@ const connectionText = computed(
   @apply whitespace-nowrap text-center leading-none;
   @apply hidden lg:block;
   @apply text-2xs dark:text-gray-600 text-gray-400;
-  @apply border-t border-gray-300 dark:border-gray-700;
   @apply p-2;
 }
 </style>

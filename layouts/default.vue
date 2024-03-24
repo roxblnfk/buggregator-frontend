@@ -68,7 +68,9 @@ export default defineComponent({
 }
 
 .main-layout__sidebar {
-  @apply w-10 md:w-14 lg:w-16 flex-none border-r border-gray-200 dark:border-gray-700 z-50 w-full h-full sticky top-0 h-screen max-h-screen;
+  @apply w-10 md:w-12 lg:w-14 flex-none;
+  @apply border-r border-gray-200 dark:border-gray-700;
+  @apply z-50 w-full h-full sticky top-0 h-screen max-h-screen;
 }
 
 .main-layout__header {
@@ -76,7 +78,7 @@ export default defineComponent({
 }
 
 .main-layout__content {
-  @apply flex flex-col h-full flex-1 w-full min-h-screen absolute top-0 left-0 pl-10 md:pl-14 lg:pl-16;
+  @apply flex flex-col h-full flex-1 w-full min-h-screen absolute top-0 left-0 pl-10 md:pl-12 lg:pl-14;
 
   & > div {
     @apply flex flex-col h-full flex-1;
